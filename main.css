@@ -1,0 +1,111 @@
+html {
+  scroll-behavior: smooth;
+  font-family: 'Source Code Pro', monospace;
+
+}
+
+/* Add a black background color to the top navigation */
+body {
+  background-color: black;
+  padding: 0;
+  margin: 0;
+}
+
+.topnav {
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 10px 10px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.hook {
+  height: 100vh;
+  background-color: white;
+  text-align: center;
+}
+
+#backgroundvideo {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.hookcontainer {
+  position: absolute;
+  display: inline-block;
+  top: 40%;
+  left: 40%;
+}
+
+.summary {
+  background-color: white;
+  height: 100vh;
+  text-align: center;
+}
+
+.summarycontainer {
+  display: inline-block;
+  margin-left: 25%;
+  margin-right: 25%;
+  margin-top: 25%;
+}
+
+.projects {
+  height: 100vh;
+  text-align: center;
+  background-color: white;
+}
+
+#projectscontainer {
+  margin-top: 5%;
+  text-align: center;
+  display: inline-block;
+  /*width: 50%;*/
+}
+
+.projectcells {
+  display: inline-block;
+  overflow: auto;
+  background-color: lightgray;
+  border-radius: 4%;
+  width: 200px;
+  height: 300px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.projectcells h3, .projectcells img, .projectcells p, .projectcells a {
+  margin: auto;
+  margin-top: 2%;
+  text-align: center;
+}
+
+.projectcells p {
+  padding:1%;
+  text-align: left;
+}
+
+.projectcells img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}

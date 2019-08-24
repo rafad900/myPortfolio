@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Rafael A. Diaz Cruz </title>
+        <link rel='stylesheet' type='text/css' href='main.css' media='screen'>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src='main.js'></script>
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro&display=swap" rel="stylesheet"> 
+    </head>
+    <body>
+        <div class="topnav">
+            <a class="anchor" href="#INTRO">Home</a>
+            <a class='anchor' href="#SUMMARY">News</a>
+            <a class='anchor' href="#PROJECTS">Contact</a>
+            <a class='anchor' href="#about">About</a>
+        </div>
+        <div class='hook'>
+            <video autoplay muted loop id='backgroundvideo'>
+                <source src='PortfolioBackgroundVideo.mp4' type='video/mp4'>
+            </video>
+            <a name='INTRO'></a>
+            <div class='hookcontainer'>
+                <h1> My Programming <br> Art</h1>
+            </div>
+        </div>
+        <div class='summary'>
+            <a name='SUMMARY'></a>
+            <div class='summarycontainer'>
+                <p>
+                    I am a college student learning as much as I can about all things computers. From 
+                    creating custom curcuits to developing programs using assembly language, python, C, C++ to front and 
+                    back end web development. I am eager to gain real world experience and willing to take any opportunity 
+                    that presents itself to me. 
+                </p>
+            </div>
+        </div>
+        <div class='projects'>
+            <a name='PROJECTS'></a>
+            <div id='projectscontainer'>
+                <script>
+                    var text = ' <h1>Projects</h1> ';
+                    for (var index = 0; index < programs.length; index++) {
+                        text += '<div class="projectcells">';
+                        text += '<h3>' + programs[index].getname() + '</h3>';
+                        text += '<img src="' + programs[index].getimage() + '" alt="Some image">'; 
+                        text += '<p>' + programs[index].gettext() + '</p>';
+                        text += '<a href="' + programs[index].getlink() + '" download> <p> Download </p> </a>';
+                        text += '</div>';
+                    }
+                    document.getElementById('projectscontainer').innerHTML = text;
+                </script>
+            </div>            
+        </div>
+    </body>
+</html>
